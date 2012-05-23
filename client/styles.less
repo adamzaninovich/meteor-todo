@@ -1,0 +1,55 @@
+@width: 400px;
+
+body{
+  background: #737373;
+}
+.protip {
+  margin: 10px auto 0px;
+  width: @width - 11px;
+}
+#container {
+  margin: 50px auto 0;
+  width: @width;
+  
+  h1 {
+    margin-bottom: 15px;
+  }
+  
+  input {
+    width: @width - 50px;
+  }
+  
+  blockquote {
+    width: @width - 30px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  ul {
+    li {
+      margin-bottom: 10px;
+      .item-name {
+        cursor: default;
+        display: inline-block;
+        width: @width - 80px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      a.uncomplete {
+        display: none;
+      }
+    }
+    li.completed {
+      a.complete {
+        display:none;
+      }
+      a.uncomplete {
+        display: inline-block;
+      }
+      .item-name {
+        text-decoration: line-through;
+      }
+    }
+  }
+}

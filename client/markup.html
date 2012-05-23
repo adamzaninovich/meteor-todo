@@ -1,0 +1,26 @@
+<head>
+  <meta charset="utf-8">
+  <title>Todo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="todo application using meteor">
+</head>
+
+<body>
+  <div id="container" class="well">
+    <h1>Todos</h1>
+    {{> add}}
+    {{> list}}
+    {{> quote}}
+  </div>
+  <div class="alert alert-success protip">
+    <strong>Protip:</strong> Double click on an item's text to edit the item
+  </div>
+  <div class="alert alert-success protip">
+    <strong>Protip:</strong> Click on the quote to cycle through all the quotes
+  </div>
+  <div class="alert alert-info protip">
+    This app runs on <a href="http://meteor.com">Meteor</a>.
+    <i class="icon-star icon-black"></i>
+    Check out this app's code on <a href="http://github.com/adamzaninovich/">Github</a>.
+  </div>
+</body>
